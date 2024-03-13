@@ -38,6 +38,22 @@ public class Pila<T> {
         //Incremento el tamaño de la pila por el nuevo nodo
         tamanio ++;
     } 
+    //Elimina un elemento de la pila
+    public void retirar(){
+        if(!esVacio()){
+            cabeza = cabeza.getSiguiente();
+            tamanio--;
+        }
+    }
+    //Devueve el elemento almacenado en el TOPE de la pila
+    public T cima(){
+        if(!esVacio()){
+            return cabeza.getValor();
+        }else{
+            return null;
+        }
+    }
+
 
 
     
