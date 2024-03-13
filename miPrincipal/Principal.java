@@ -18,5 +18,4 @@ public class Principal {
         pila1.retirar();
         System.out.println("El TOPE de la pila es: " + pila1.cima());
     }
-    
 }
