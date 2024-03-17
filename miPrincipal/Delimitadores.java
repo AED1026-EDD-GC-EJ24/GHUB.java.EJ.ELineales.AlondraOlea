@@ -44,6 +44,7 @@ public class Delimitadores {
                     masElementosPorLeer = false;
                 }
             }
+            break;
         }
             case '*':
             {
@@ -62,6 +63,10 @@ public class Delimitadores {
             return false;
 
     }
+    //convierte un char a un objeto tipo String
+    private static String charToString(char ch) {
+        return String.valueOf(ch);
+    }
     private static boolean siguienteEsAsterisco(String cadena, int posicion){
         char car = cadena.charAt(posicion);
         if(car == '*')
@@ -76,8 +81,5 @@ public class Delimitadores {
         else
             return false;
     }
-    //convierte un char a un objeto tipo String
-    private static String charToString(char ch) {
-        return String.valueOf(ch);
-    }
+
 }

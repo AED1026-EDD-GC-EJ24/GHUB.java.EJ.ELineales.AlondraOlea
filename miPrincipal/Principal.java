@@ -10,6 +10,7 @@ public class Principal {
             System.out.println("===========================");
             System.out.println("1) Pila");
             System.out.println("2) Stack");
+            System.out.println("3) Demilitadores");
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -21,6 +22,9 @@ public class Principal {
                     break;
                 case 2:
                     DemoStack.menu();
+                    break;
+                case 3:
+                    DemoDelimitadores.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");
