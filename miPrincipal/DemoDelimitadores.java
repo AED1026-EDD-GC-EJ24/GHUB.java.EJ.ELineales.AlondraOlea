@@ -28,9 +28,16 @@ public class DemoDelimitadores {
             "int p=7; "+
             "/*comentarios*/";
         if (objDel.evaluacionDelimitadores(expr))
-             System.out.println("Expresión correcta");
+             System.out.println("Expresión Correcta");
         else
             System.out.println("Expresión Incorrecta");  
+        
+        expr = "(m > n[2)";
+        if(objDel.evaluacionDelimitadores(expr))
+            System.out.println("Expresión Correcta");
+        else
+            System.out.println("Expresión Incorrecta");
     }
+
     
 }
