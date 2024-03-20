@@ -21,7 +21,7 @@ public class Cola<T> { //Clase generica
     }
     public void encolar(T valor){
         //Crear nuevo nodo
-        Nodo<T> nuevo = new Nodo();
+        Nodo<T> nuevo = new Nodo<T>();
 
         //fijar el valor dentro del nodo
         nuevo.setValor(valor);
