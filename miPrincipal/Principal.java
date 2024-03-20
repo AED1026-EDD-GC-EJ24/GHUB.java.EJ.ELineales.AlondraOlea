@@ -13,6 +13,7 @@ public class Principal {
             System.out.println("3) Demilitadores");
             System.out.println("4) Expresion infija a posfija");
             System.out.println("5) Cola"); //primero en entrar primero en salir (filas super, banco, etc)
+            System.out.println("6) DemoQueue");
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -33,6 +34,9 @@ public class Principal {
                     break;
                 case 5:
                     DemoCola.menu();
+                    break;
+                case 6:
+                    DemoQueue.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");
