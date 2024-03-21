@@ -4,8 +4,10 @@
 ./miPrincipal/Nodo.java
 ./miPrincipal/Principal.java
 ./miPrincipal/DemoStack.java
+./miPrincipal/Persona.java
 ./miPrincipal/DemoDelimitadores.java
 ./miPrincipal/DemoPila.java
 ./miPrincipal/DemoQueue.java
 ./miPrincipal/Cola.java
 ./miPrincipal/DemoCola.java
+./miPrincipal/DemoTablaDispersion.java

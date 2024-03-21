@@ -14,6 +14,8 @@ public class Principal {
             System.out.println("4) Expresion infija a posfija");
             System.out.println("5) Cola"); //primero en entrar primero en salir (filas super, banco, etc)
             System.out.println("6) DemoQueue");
+            System.out.println("7) Tablas De Dispersión");
+            System.out.println("8) Estructura Combinada");
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -37,6 +39,12 @@ public class Principal {
                     break;
                 case 6:
                     DemoQueue.menu();
+                    break;
+                case 7:
+                    DemoTablaDispersion.menu();
+                    break;
+                case 8:
+                    DemoEstCombinada.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");
