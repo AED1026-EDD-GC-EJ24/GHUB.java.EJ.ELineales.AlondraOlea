@@ -4,7 +4,7 @@ import java.util.*;
 public class DemoTablaDispersion {
     public static void menu() {
         System.out.println("===============================");
-        System.out.println("      TABLA DE DISPERSIÓN      ");
+        System.out.println("      TABLA DE DISPERSIÓN      "); //HASHTABLE
         System.out.println("===============================");
         System.out.println( );
         //Instanciar varias personas 

@@ -2,7 +2,7 @@ package miPrincipal;
 import java.util.*;
 public class HashTable2<T> {
     private Hashtable<String, LinkedList<T>> tabla;
-    private Vector<String> claves;
+    private Vector<String> claves; //Vector es como un arreglo pero se manejan objetos 
 
 
     public HashTable2() {
@@ -19,4 +19,12 @@ public class HashTable2<T> {
         }
         lst.addLast(elm);
     }   
+    
+    public LinkedList<T> get(String key){
+        return tabla.get(key);
+    }
+    
+    public Collection<String> keys(){
+        return claves;
+    }
 }
