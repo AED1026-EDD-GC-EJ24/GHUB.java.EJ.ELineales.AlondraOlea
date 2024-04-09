@@ -16,6 +16,7 @@ public class Principal {
             System.out.println("6) DemoQueue");
             System.out.println("7) Tablas De Dispersión");
             System.out.println("8) Estructura Combinada");
+            System.out.println("9) Expresion Infija a Prefija");
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -45,6 +46,9 @@ public class Principal {
                     break;
                 case 8:
                     DemoEstCombinada.menu();
+                    break;
+                case 9:
+                    DemoInfijaPrefija.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");

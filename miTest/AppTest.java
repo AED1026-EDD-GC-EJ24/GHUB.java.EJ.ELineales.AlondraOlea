@@ -23,8 +23,6 @@ class AppTest {
         boolean resultado=objDel.evaluacionDelimitadores(expr);
         System.out.println(resultado);
         assertTrue(resultado,"Debe ser verdadero");
-
-
     }
 
     @Test public void testEvaluacionFallida(){
@@ -32,7 +30,33 @@ class AppTest {
         boolean resultado=objDel.evaluacionDelimitadores(expr);
         System.out.println(resultado);
         assertFalse(resultado,"Debe ser verdadero");
+    }
+    
+    @Test public void testInfijaPrefija(){
+        String expresionInfija = "a + b * c";//expresión valida
+		String expresionPrefijo = InfijaPrefija.convertirAPrefijo(expresionInfija);
+        String expresionEsperada = "abc*+";
+        assertTrue(expresionPrefijo.equals(expresionEsperada));
 
+        expresionInfija = "(a + b) * c"; //expresión valida
+        expresionPrefijo = InfijaPrefija.convertirAPrefijo(expresionInfija);
+        expresionEsperada = "ab+c*";
+        assertTrue(expresionPrefijo.equals(expresionEsperada));
+
+        expresionInfija = "(a + (e+z)+b) * c"; //expresión valida
+        expresionPrefijo = InfijaPrefija.convertirAPrefijo(expresionInfija);
+        expresionEsperada = "aez++b+c*";
+        assertTrue(expresionPrefijo.equals(expresionEsperada));
+
+        expresionInfija = "(a + (e+z)/b) * c"; //expresión valida
+        expresionPrefijo = InfijaPrefija.convertirAPrefijo(expresionInfija);
+        expresionEsperada = "aez+b/+c*";
+        assertTrue(expresionPrefijo.equals(expresionEsperada));
+
+        expresionInfija = "(X + Z) * W / T ^ Y - V"; //expresión valida
+        expresionPrefijo = InfijaPrefija.convertirAPrefijo(expresionInfija);
+        expresionEsperada = "XZ+W*TY^/V-";
+        assertTrue(expresionPrefijo.equals(expresionEsperada));
 
     }
 }
