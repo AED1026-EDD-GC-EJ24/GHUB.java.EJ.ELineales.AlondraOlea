@@ -1,7 +1,7 @@
 package miPrincipal;
 import java.util.*;
 public class Principal {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws PosicionIlegalException{
         Scanner leer = new Scanner(System.in);
         int opc = 0;
         do{
