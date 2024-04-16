@@ -17,6 +17,7 @@ public class Principal {
             System.out.println("7) Tablas De Dispersión");
             System.out.println("8) Estructura Combinada");
             System.out.println("9) Lista Simplemente Enlazada"); //Puede realizar las operaciones al elemento por cualquier posición
+            System.out.println("10) LinkedList y ArrayList"); 
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -49,6 +50,9 @@ public class Principal {
                     break;
                 case 9:
                     DemoListaSimple.menu();
+                    break;
+                case 10:
+                    DemoLinkedListyArrayList.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");

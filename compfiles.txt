@@ -19,4 +19,5 @@
 ./miPrincipal/DemoTablaDispersion.java
 ./miPrincipal/DemoEstCombinada.java
 ./miPrincipal/UNombres.java
+./miPrincipal/DemoLinkedListyArrayList.java
 ./miPrincipal/DemoInfijaPrefija.java
