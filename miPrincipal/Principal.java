@@ -1,5 +1,7 @@
 package miPrincipal;
 import java.util.*;
+
+import EjercicioContactos.DemoListaContactos;
 public class Principal {
     public static void main(String[] args) throws PosicionIlegalException{
         Scanner leer = new Scanner(System.in);
@@ -20,6 +22,7 @@ public class Principal {
             System.out.println("10) LinkedList y ArrayList"); 
             System.out.println("11) ArrayList De Personas"); 
             System.out.println("12) LinkedList De Cuadrúpedos"); 
+            System.out.println("13) Lista de Contactos"); 
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -61,6 +64,9 @@ public class Principal {
                     break;
                 case 12:
                     DemoLinkedListCuadrupedos.menu();
+                    break;
+                case 13:
+                    DemoListaContactos.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");
