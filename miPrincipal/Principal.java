@@ -18,6 +18,8 @@ public class Principal {
             System.out.println("8) Estructura Combinada");
             System.out.println("9) Lista Simplemente Enlazada"); //Puede realizar las operaciones al elemento por cualquier posición
             System.out.println("10) LinkedList y ArrayList"); 
+            System.out.println("11) ArrayList De Personas"); 
+            System.out.println("12) LinkedList De Cuadrúpedos"); 
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -53,6 +55,12 @@ public class Principal {
                     break;
                 case 10:
                     DemoLinkedListyArrayList.menu();
+                    break;
+                case 11:
+                    DemoArrayListPersonas.menu();
+                    break;
+                case 12:
+                    DemoLinkedListCuadrupedos.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");
