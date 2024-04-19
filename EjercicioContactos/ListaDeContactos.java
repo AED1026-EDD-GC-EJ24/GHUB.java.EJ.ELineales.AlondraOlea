@@ -20,8 +20,13 @@ public class ListaDeContactos {
     public boolean agregarContacto(String nombres, String apellidos, String direccion, 
     String correo, String telefono, String celular) throws PosicionIlegalException{
         Contacto con = buscarContacto(nombres, apellidos);
-
-        return true;
+        if(con == null){
+            Contacto nuevo = new Contacto(nombres, apellidos, direccion, correo, telefono, celular);
+            contactos.agregar(nuevo);
+            return true;
+        }else{
+            return false;
+        }
     }
     
     //Busca un contacto dado sus nombres y apellidos, 
