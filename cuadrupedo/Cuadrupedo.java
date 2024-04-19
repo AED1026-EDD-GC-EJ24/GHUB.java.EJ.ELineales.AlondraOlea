@@ -1,10 +1,10 @@
 package cuadrupedo;
 
-public class cuadrupedo {
+public class Cuadrupedo {
     private int idCuadrupedo;
     private String tipo;
     //constructor
-    public cuadrupedo(int idCuadrupedo, String tipo) {
+    public Cuadrupedo(int idCuadrupedo, String tipo) {
         this.idCuadrupedo = idCuadrupedo;
         this.tipo = tipo;
     }

@@ -1,3 +1,8 @@
+./cuadrupedo/Cuadrupedo.java
+./personas/Persona.java
+./EjercicioContactos/ListaDeContactos.java
+./EjercicioContactos/Contacto.java
+./EjercicioContactos/DemoListaContactos.java
 ./miTest/AppTest.java
 ./miPrincipal/Pila.java
 ./miPrincipal/Delimitadores.java
@@ -6,11 +11,13 @@
 ./miPrincipal/TestVector.java
 ./miPrincipal/Principal.java
 ./miPrincipal/DemoStack.java
+./miPrincipal/DemoLinkedListCuadrupedos.java
 ./miPrincipal/DemoListaSimple.java
 ./miPrincipal/Persona.java
 ./miPrincipal/Lista.java
 ./miPrincipal/DemoDelimitadores.java
 ./miPrincipal/DemoPila.java
+./miPrincipal/DemoArrayListPersonas.java
 ./miPrincipal/PosicionIlegalException.java
 ./miPrincipal/DemoQueue.java
 ./miPrincipal/Cola.java

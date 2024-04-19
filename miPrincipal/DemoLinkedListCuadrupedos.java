@@ -1,5 +1,5 @@
 package miPrincipal;
-import cuadrupedo.cuadrupedo;
+import cuadrupedo.Cuadrupedo;
 import java.util.*;
 /*
  * Se introduce 10000 cuadrupedos en una lista de tipo estatica list y dinamica
@@ -11,43 +11,58 @@ import java.util.*;
  */
 public class DemoLinkedListCuadrupedos {
     public static void menu() {
-        System.out.println("**************************");
-        System.out.println("LinkedList de Cuadrúpedos");
-        System.out.println("**************************");
-        try {
-            List <cuadrupedo> cuadrupedos = new ArrayList<cuadrupedo>();
-            String[] tipos = {"Perro", "Gato", "León", "Elefante"};
-            Random r = new Random();
-            for (int i = 1; i < 10000; i++) {
-                String tipo = tipos[r.nextInt(tipos.length)];
-                cuadrupedos.add(new cuadrupedo(i, tipo));
+        System.out.println("========================");
+        System.out.println("       LinkedList       ");
+        System.out.println("       Cuadrúpedos      ");
+        System.out.println("========================");
+        System.out.println();
+        try{
+            List<Cuadrupedo> cuadrupedos = new LinkedList<>();
+            String[] tipos={"León","Gato","Perro","Elefante"};
+            Random random = new Random();
+            for(int i=1;i<=10000;i++){
+                String tipo = tipos[random.nextInt(tipos.length)];
+                cuadrupedos.add(new Cuadrupedo(i, tipo));
             }
-            int leonCount = 0, perroCount = 0, gatoCount = 0, elefanteCount = 0;
-            for (cuadrupedo c : cuadrupedos) {
-                if (c.getIdCuadrupedo() % 1000 == 0) {
-                    System.out.println("ID: " + c.getIdCuadrupedo() + ", Tipo: " + c.getTipo() + "\n");
+            int leonCount=0, gatoCount=0,perroCount=0, elefanteCount=0;
+            for(Cuadrupedo cuadrupedo: cuadrupedos){
+                if(cuadrupedo.getIdCuadrupedo() %1000 ==0){
+                    System.out.println("ID"+cuadrupedo.getIdCuadrupedo()+
+                    ", Tipo: "+cuadrupedo.getTipo());
                 }
-                switch (c.getTipo()) {
-                    case "Perro":
-                        perroCount++;
+                switch (cuadrupedo.getTipo()) {
+                    case "León":
+                        leonCount++;
                         break;
                     case "Gato":
                         gatoCount++;
                         break;
-                    case "León":
-                        leonCount++;
+                    case "Perro":
+                        perroCount++;
                         break;
                     case "Elefante":
                         elefanteCount++;
                         break;
                 }
+
+            }
+            System.out.println("Resumen:");
+            System.out.println("Leones: " + leonCount);
+            System.out.println("Gatos: " + gatoCount);
+            System.out.println("Perros: " + perroCount);
+            System.out.println("Elefantes: " + elefanteCount);
+
+            System.out.println("Muestra la lista de todos lo cuadrúpedos creados:");
+            Cuadrupedo temp = null;
+            Iterator<Cuadrupedo> it = cuadrupedos.iterator();
+            while(it.hasNext()){
+                temp = it.next();
+                System.out.println(temp);
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
         }
-        
+        catch(Exception e){
+            e.printStackTrace();
+        }   
     }
-
-    
 }
