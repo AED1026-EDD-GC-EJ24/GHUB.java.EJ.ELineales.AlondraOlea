@@ -68,7 +68,7 @@ public class ListaDeContactos {
     
     //Busca un contacto dado sus nombres y apellidos, 
     //retorna el contacta si se encuentra y null en caso contrario
-    private Contacto buscarContacto(String nombres, String apellidos) throws PosicionIlegalException {
+    Contacto buscarContacto(String nombres, String apellidos) throws PosicionIlegalException {
         for(int i = 0; i < contactos.getTamanio(); i++){
             Contacto con = contactos.getValor(i);
             if(nombres.equals(con.getNombres()) && apellidos.equals(con.getApellidos())){
