@@ -23,6 +23,7 @@ public class Principal {
             System.out.println("11) ArrayList De Personas"); 
             System.out.println("12) LinkedList De Cuadrúpedos"); 
             System.out.println("13) Lista de Contactos"); 
+            System.out.println("14) Lista Doblemente Enlazada");
             System.out.println("0) Salir");
             System.out.println( );
             System.out.println("Selecciona opción de Estructura: ");
@@ -67,6 +68,9 @@ public class Principal {
                     break;
                 case 13:
                     DemoListaContactos.menu();
+                    break;
+                case 14:
+                    DemoListaDoble.menu();
                     break;
                 case 0:
                     System.out.println("PROGRAMA FINALIZADO:)");
