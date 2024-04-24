@@ -1,6 +1,4 @@
 package EjercicioContactos;
-import java.util.*;
-
 import miPrincipal.Lista;
 import miPrincipal.PosicionIlegalException;
 
