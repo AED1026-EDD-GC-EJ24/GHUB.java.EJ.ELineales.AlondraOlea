@@ -34,7 +34,8 @@ public class DemoListaSimple {
         System.out.println("Dato en la posicion 0: "+lista.getValor(0));
         System.out.println("Dato en la posicion 1: "+lista.getValor(1));
         System.out.println("Dato en la posicion 2: "+lista.getValor(2));     
-    }
-    
+    }   
 }
+
+
 

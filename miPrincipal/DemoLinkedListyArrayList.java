@@ -70,8 +70,8 @@ public class DemoLinkedListyArrayList {
 
         }catch(Exception e){
             System.out.println("Error: " + e.getMessage());
-
         }
-    }
-    
+    }  
 }
+
+

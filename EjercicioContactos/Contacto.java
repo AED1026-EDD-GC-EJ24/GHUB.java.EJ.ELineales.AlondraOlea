@@ -72,3 +72,4 @@ public class Contacto {
                 + correo + ", " + telefono + ", " + celular + "\n";
     }    
 }
+

@@ -5,7 +5,6 @@ import miPrincipal.*;
 public class ListaDeContactos {
     //Atributos
     private Lista<Contacto> contactos;
-
     //Constructor
     public ListaDeContactos() {
         contactos = new Lista<Contacto>();
@@ -48,7 +47,17 @@ public class ListaDeContactos {
             return false;
         }
     }
-
+    //Busca un contacto dado sus nombres y apellidos, 
+    //retorna el contacta si se encuentra y null en caso contrario
+    Contacto buscarContacto(String nombres, String apellidos) throws PosicionIlegalException {
+        for(int i = 0; i < contactos.getTamanio(); i++){
+            Contacto con = contactos.getValor(i);
+            if(nombres.equals(con.getNombres()) && apellidos.equals(con.getApellidos())){
+                return con;
+            } 
+        }
+        return null; //No econtro, devuelbe null
+    }
     public boolean modificarContacto(String nombres, String apellidos, String direccion,
             String correo, String telefono, String celular) throws PosicionIlegalException{
             //Verificar si el contacto existe
@@ -65,17 +74,5 @@ public class ListaDeContactos {
 
 
     }
-    
-    //Busca un contacto dado sus nombres y apellidos, 
-    //retorna el contacta si se encuentra y null en caso contrario
-    Contacto buscarContacto(String nombres, String apellidos) throws PosicionIlegalException {
-        for(int i = 0; i < contactos.getTamanio(); i++){
-            Contacto con = contactos.getValor(i);
-            if(nombres.equals(con.getNombres()) && apellidos.equals(con.getApellidos())){
-                return con;
-            } 
-        }
-        return null; //No econtro, devuelbe null
-    }
-
 }
+

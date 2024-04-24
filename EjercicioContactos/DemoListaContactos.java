@@ -10,7 +10,7 @@ public class DemoListaContactos{
         System.out.println("      LISTA CONTACTOS      ");
         System.out.println("===========================");
         System.out.println( );
-        
+
         ListaDeContactos ldc = new ListaDeContactos();
         //agregamos algunos contactos
         ldc.agregarContacto("Fernando", "Castro", "C11 12 No 12-12 Papagayo",
@@ -54,8 +54,11 @@ public class DemoListaContactos{
             System.out.println(listado.getValor(i));
         }
      
-        System.out.println("~~~~ ELEMENTO BUSCADO ~~~~");
-        System.out.println("Elemento buscado:"+ ldc.buscarContacto("Carolina", "Sanchez"));
-        System.out.println("Elemento buscado:"+ ldc.buscarContacto("Carolina", "Sanches"));
+        System.out.println("---- Elemento Buscado ---");
+        System.out.println("Elemento buscado:"+
+          ldc.buscarContacto("Carolina", "Sanchez"));
+        System.out.println("Elemento buscado:"+
+          ldc.buscarContacto("Carolina", "Sanches"));
+    }
 }
-}
+
