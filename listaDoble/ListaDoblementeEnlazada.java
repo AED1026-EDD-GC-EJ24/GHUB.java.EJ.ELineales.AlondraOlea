@@ -105,14 +105,16 @@ public class ListaDoblementeEnlazada<T> {
                 if(pos == 0){
                     //Eliminar el primer nodo de la lista
                     cabeza = cabeza.getSiguiente();
+                    cabeza.setAnterior(null);
                     tamanio--;
-                }else{ //Remover el ultimo o en medio
+                }else{ //el ultimo o en medio
                     Nodo<T> aux = cabeza;
                     for (int i = 0; i < pos - 2; i++) {
                         aux = aux.getSiguiente();
                     }
                     Nodo<T> prox = aux.getSiguiente();
                     aux.setSiguiente(prox.getSiguiente());
+                    prox.setSiguiente(aux.getSiguiente());
                     tamanio--;
                 }
             }else{
