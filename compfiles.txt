@@ -23,6 +23,7 @@
 ./miPrincipal/DemoArrayListPersonas.java
 ./miPrincipal/PosicionIlegalException.java
 ./miPrincipal/DemoQueue.java
+./miPrincipal/DemoListaCircular.java
 ./miPrincipal/Cola.java
 ./miPrincipal/DemoCola.java
 ./miPrincipal/InfijaPrefija.java
@@ -31,3 +32,5 @@
 ./miPrincipal/UNombres.java
 ./miPrincipal/DemoLinkedListyArrayList.java
 ./miPrincipal/DemoInfijaPrefija.java
+./listaCircular/Nodo.java
+./listaCircular/ListaCircular.java

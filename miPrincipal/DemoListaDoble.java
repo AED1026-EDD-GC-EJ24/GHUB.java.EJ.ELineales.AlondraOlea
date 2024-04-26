@@ -17,6 +17,27 @@ public class DemoListaDoble {
         System.out.println(listadoble.getValor(0));
         System.out.println(listadoble.getValor(1));
         System.out.println(listadoble.getValor(2));
+        System.out.println("Mostrar los elementos después de agregar");
+        System.out.println("Elemento 0:"+listadoble.getValor(0));
+        System.out.println("Elemento 1:"+listadoble.getValor(1));
+        System.out.println("Elemento 2:"+listadoble.getValor(2));
+        for(int i=0;i<listadoble.getTamanio();i++){
+            System.out.println("Elemento "+i+":"+listadoble.getValor(i));
+        }
+        listadoble.insertar(50, 1);
+
+        System.out.println("Elementos despues de la inserción");
+
+        for(int i=0;i<listadoble.getTamanio();i++){
+            System.out.println("Elemento "+i+":"+listadoble.getValor(i));
+        }
+
+        listadoble.remover(0);
+        System.out.println("Elementos despues de la eliminacion");
+
+        for(int i=0;i<listadoble.getTamanio();i++){
+            System.out.println("Elemento "+i+":"+listadoble.getValor(i));
+        }
 
         
     }
