@@ -1,7 +1,5 @@
 package miPrincipal;
-
 import listaDoble.ListaDoblementeEnlazada;
-
 public class DemoListaDoble {
     public static void menu() throws PosicionIlegalException{
         System.out.println("===================================");
@@ -38,7 +36,5 @@ public class DemoListaDoble {
         for(int i=0;i<listadoble.getTamanio();i++){
             System.out.println("Elemento "+i+":"+listadoble.getValor(i));
         }
-
-        
     }
 }
