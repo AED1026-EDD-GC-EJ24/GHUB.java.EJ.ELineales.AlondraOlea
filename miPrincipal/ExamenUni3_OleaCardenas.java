@@ -20,9 +20,9 @@ public class ExamenUni3_OleaCardenas {
         System.out.println("Contacto "+ i+ ": " + contacto);
         i++;
     }
-
+    //Removemos el ultimo en la lista
     lista.removeLast();
-    System.out.println("~~~~ LISTA DE CONTACTOS DESPUES DE ELIMINAR ~~~~");
+    System.out.println("~~~~ LISTA DE CONTACTOS DESPUES DE ELIMINAR ULTIMO ~~~~");
     int j = 1;
     for (Contacto contacto : lista) {
         System.out.println("Contacto "+ j+ ": " + contacto);
